@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>formulaire</title>
+</head>
+<body>
+	<form method="post" action="traitement.php">
+		<h3>Renseignements</h3>
+		<fieldset>
+			<legend>Civilité</legend>
+			<p>
+				<label for="nom">Nom: </label>
+				<input type="text" name="nom" id="nom" placeholder="ex:NDOMBI ABDUL" required="required"/><br/><br/>
+
+				<label for="prenom">Prénom: </label>
+				<input type="text" name="prenom" id="prenom" placeholder="ex:Rahmatullah" required="required"><br/><br/>
+
+				<label for="mail">Adresse E-mail: </label>
+				<input type="email" name="e_mail" id="mail" placeholder="ex:sarah15@gmail.com"><br/><br/>
+
+				<label for="pass">Mot de passe: </label>
+				<input type="password" name="pass" id="pass" placeholder="ex:1234@M/bao" required="required"/><br/><br/>
+
+				<label for="date">Date de naissance: </label>
+				<input type="date" name="date_naissance" id="date"><br/><br/>
+
+				<label for="telephone">Contact: </label>
+				<input type="tel" name="contact" id="telephone"><br/><br/>
+
+				<label for="homme">Homme </label>
+				<input type="radio" name="sexe" id="homme" required="required">
+
+		        <label for="femme">Femme </label>
+				<input type="radio" name="sexe" id="femme" required="required"><br/><br/>
+			</p>
+		</fieldset>
+		<fieldset >
+			<legend>Formation</legend>
+			<p>
+				<label for="diplome">Dernier Diplôme </label>
+				<select name="diplome" id="diplome" required="required">
+					<option value="Aucun">Aucun</option>
+					<option value="Bac">Bac</option>
+					<option value="Bac2">Bac +2</option>
+					<option value="Bac3" selected="selected">Bac +3</option>
+					<option value="Master">Master</option>
+					<option value="Doctorat">Doctorat</option>	
+				</select>
+			    <h4>Centres d'intérêts</h4>
+			    <label for="musique">Musique</label>
+			    <input type="checkbox" name="intérêts" id="musique">
+
+			    <label for="sport">Sport</label>
+			    <input type="checkbox" name="intérêts" id="sport">
+
+			    <label for="lecture">Lecture</label>
+			    <input type="checkbox" name="intérêts" id="lecture">
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Commentaires (maximum 100mots)</legend>
+			<label for="precisions">Si "autres" veillez préciser</label><br/>
+			<textarea name="Commentaires" id="precisions" cols="50" rows="15" maxlength="100"></textarea>
+		</fieldset>
+		<input type="checkbox" name="condition" id="condition" required="required"><a href="#"> J'accepte les conditions</a><br/>
+		<input type="submit" value="Envoyer" name="envoie">
+		<input type="reset" value="Annuler" name="annuler">
+	</form>
+
+</body>
+</html>
