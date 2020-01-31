@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>formulaire</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
 </head>
 <body>
 	<form method="post" action="traitement.php">
@@ -32,7 +33,7 @@
 				<input type="radio" name="sexe" id="homme" required="required">
 
 		        <label for="femme">Femme </label>
-				<input type="radio" name="sexe" id="femme" required="required"><br/><br/>
+				<input class="button" type="radio" name="sexe" id="femme" required="required"><br/><br/>
 			</p>
 		</fieldset>
 		<fieldset >
@@ -64,8 +65,8 @@
 			<textarea name="Commentaires" id="precisions" cols="50" rows="15" maxlength="100"></textarea>
 		</fieldset>
 		<input type="checkbox" name="condition" id="condition" required="required"><a href="#"> J'accepte les conditions</a><br/>
-		<input type="submit" value="Envoyer" name="envoie">
-		<input type="reset" value="Annuler" name="annuler">
+		<input class="button" type="submit" value="Envoyer" name="envoie">
+		<input class="button" type="reset" value="Annuler" name="annuler">
 	</form>
 
 </body>
